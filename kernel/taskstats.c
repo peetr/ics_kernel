@@ -589,6 +589,7 @@ static struct genl_ops cgroupstats_ops = {
 	.cmd		= CGROUPSTATS_CMD_GET,
 	.doit		= cgroupstats_user_cmd,
 	.policy		= cgroupstats_cmd_get_policy,
+	.flags		= GENL_ADMIN_PERM,
 };
 
 /* Needed early in initialization */

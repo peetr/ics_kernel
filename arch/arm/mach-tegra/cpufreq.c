@@ -353,7 +353,7 @@ static int tegra_cpufreq_driver_init(struct cpufreq_policy *pol)
 	freq_table = freq_table_1000;
 #else
 	freq_table = freq_table_1500;
-#endif //CONFIG_STOCK_VOLTAGE
+#endif /*CONFIG_STOCK_VOLTAGE*/
 
 	pol->cpuinfo.transition_latency = 0;
 
